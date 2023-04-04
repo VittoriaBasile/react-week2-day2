@@ -46,7 +46,7 @@ const AddComment = (props) => {
           onChange={(e) => setCommentObj({ ...commentObj, comment: e.target.value })}
         />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="comment">
+      <Form.Group className="mb-3" controlId="rate">
         <Form.Label>Voto</Form.Label>
         <Form.Select
           value={commentObj.rate}
@@ -65,7 +65,7 @@ const AddComment = (props) => {
         </Form.Select>
       </Form.Group>
 
-      <Button type="submit" variant="primary">
+      <Button className="my-2" type="submit" variant="primary">
         Invia commento
       </Button>
     </Form>
